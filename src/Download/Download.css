@@ -1,0 +1,49 @@
+.download {
+  margin-bottom: 5rem;
+}
+.browser-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.browser {
+  padding: 1rem;
+  text-align: center;
+  flex-basis: 250px;
+  box-shadow: 3px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
+.browser span {
+  margin-top: 1rem;
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+}
+.browser small {
+  font-size: 11px;
+  color: rgb(126, 126, 126);
+}
+.button-download {
+  margin-top: 3rem;
+}
+/* media */
+
+@media screen and (max-width: 868px) {
+  .browser-container {
+    flex-direction: column;
+  }
+  .browser {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 868px) {
+  .browser:nth-child(2) {
+    margin-top: 4rem;
+  }
+  .browser:nth-child(3) {
+    margin-top: 6rem;
+  }
+}

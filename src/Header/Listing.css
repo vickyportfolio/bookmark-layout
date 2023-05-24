@@ -1,0 +1,96 @@
+:root {
+  --pinkColor: rgb(252, 69, 100);
+  --transition: all 0.2s ease-in-out;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+.list {
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+}
+.login {
+  color: white;
+  background-color: var(--pinkColor);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+.fa {
+  font-size: 1.5rem !important;
+  color: whitesmoke;
+  display: none;
+}
+.fa-bars {
+  color: #525274;
+}
+/* hovering effect */
+a:hover {
+  color: var(--pinkColor);
+}
+.login:hover {
+  color: var(--pinkColor);
+  outline: 1px solid var(--pinkColor);
+  background-color: transparent;
+}
+.mobile-list {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  margin-top: 3rem;
+  width: 90%;
+  text-align: center;
+}
+.mobile-list > li:not(:last-child) {
+  width: 50%;
+  transition: all 0.3s ease-in-out;
+  border-top: 0px solid whitesmoke;
+}
+.mobile-list > li:not(:last-child):hover {
+  width: 100%;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+.mobile-list > li > a {
+  color: white !important;
+  font-size: 1.2rem;
+}
+.mobile-list button:hover {
+  color: white;
+  outline: 1px solid whitesmoke;
+}
+
+/* media screen */
+
+@media screen and (max-width: 886px) {
+  :is(.mobile-list, .list) li:last-child {
+    position: absolute;
+    top: 14px;
+    right: 25px;
+  }
+  .fa {
+    display: block;
+  }
+  li {
+    padding-top: 1rem;
+    max-width: 100%;
+  }
+  .list > li:not(:last-child) {
+    display: none;
+  }
+  /* li:not(:last-child) {
+    display: none;
+  } */
+}

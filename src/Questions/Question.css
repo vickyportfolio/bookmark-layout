@@ -1,0 +1,46 @@
+.questions {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.accordion-container {
+  padding: 1rem;
+  margin: auto;
+}
+.accordion-box {
+  border-top: 1px solid rgb(179, 176, 174);
+  padding: 1rem;
+  cursor: grab;
+  -webkit: grab;
+}
+.accordion-box:last-child {
+  border-bottom: 1px solid rgb(179, 176, 174);
+}
+
+.accordion-box > .para {
+  margin-top: 2rem;
+}
+.flex-accord {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-accord > h4:hover {
+  color: rgb(255, 37, 37);
+}
+.open {
+  height: auto;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.close {
+  height: 0;
+  opacity: 0;
+}
+
+/* media */
+
+@media (min-width: 868px) {
+  .accordion-container {
+    width: 50%;
+  }
+}
