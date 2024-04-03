@@ -1,6 +1,6 @@
 {
-  "homepage": "http://vickyportfolio.github.io/reactChallenge",
-  "name": "react-challenge",
+  "homepage": "http://vickyportfolio.github.io/bookmark-layout",
+  "name": "bookmark-layout",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
